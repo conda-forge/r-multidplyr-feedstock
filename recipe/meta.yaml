@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/multidplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multidplyr/multidplyr_{{ version }}.tar.gz
-  sha256: debad7d99d53152ca6c84b20b16d863d9270c3d0cc44324ee309c4b341cb11a8
+  sha256: 6b490318510984373f1a6b3109c8dfc27220f945d6e31d771bd6586b68ba88b1
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -55,11 +55,10 @@ test:
 about:
   home: https://github.com/tidyverse/multidplyr
   license: MIT
-  summary: Partition a data frame across multiple worker processes to provide simple multicore
-    parallelism.
+  summary: Partition a data frame across multiple worker processes to provide simple multicore parallelism.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
