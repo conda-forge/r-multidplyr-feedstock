@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/multidplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multidplyr/multidplyr_{{ version }}.tar.gz
-  sha256: 6b490318510984373f1a6b3109c8dfc27220f945d6e31d771bd6586b68ba88b1
+  sha256: 8b9aa4c3c3515c31093436453e531eb15d5ef8e0345e83cbbddbd066884d3d20
 
 build:
   merge_build_host: true  # [win]
