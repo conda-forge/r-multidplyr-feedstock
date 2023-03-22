@@ -1,11 +1,11 @@
-About r-multidplyr
-==================
+About r-multidplyr-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-multidplyr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tidyverse/multidplyr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-multidplyr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Partition a data frame across multiple worker processes to provide simple multicore parallelism.
 
