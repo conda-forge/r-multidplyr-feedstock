@@ -1,4 +1,4 @@
-{% set version = "0.1.3" %}
+{% set version = "0.1.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/multidplyr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multidplyr/multidplyr_{{ version }}.tar.gz
-  sha256: 92b75ed45e39d0525357e916d7a96e44cd943494670267621f8ea3173411d4a3
+  sha256: 7a51421eec94389abf98e43937589c6a9905791a22c2c37719d0fe22bf3e1df3
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
